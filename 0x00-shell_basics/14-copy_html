@@ -1,2 +1,2 @@
 #!/bin/bash
-cp *.c . ..
+rsync -u --ignore-existing --include='*.c' --exclude='*' . ..
